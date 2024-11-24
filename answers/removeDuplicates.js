@@ -30,6 +30,25 @@ function removeDuplicatesThree(arr) {
   return uniqueArr;
 }
 
+// Method 4
+function removeDuplicates(arr){
+
+  let unique =[]
+
+  arr.forEach((e) => {
+      let found = false;
+      for(val of unique){
+          if(e === val){
+              found = true;
+          }
+      }
+      if(!found){
+          unique.push(e)
+      }
+  })
+  return unique
+}
+
 module.exports = {
   removeDuplicatesOne,
   removeDuplicatesTwo,

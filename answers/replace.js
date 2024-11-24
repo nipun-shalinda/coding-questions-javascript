@@ -1,7 +1,7 @@
 const str = 'hello world nipun'
-let replace = ''
-function replce(str) {
 
+function replce(str) {
+    let replace = ''
     for(let i=0; i < str.length; i++){
         if(str[i] === ' '){
             replace += "_"

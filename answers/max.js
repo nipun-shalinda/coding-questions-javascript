@@ -15,3 +15,21 @@ output = [122, 44, 100]
 
         return height;
     }
+
+    //Method 2
+    function findMax(arr){
+        let maxArr = []
+        arr.forEach((e) => {
+            let  maxVal = 0
+            e.split('-').forEach((f) => {
+               num =  parseFloat(f)
+                if(num > maxVal){
+                    maxVal =num;
+                }
+            })
+            
+            maxArr.push(maxVal)
+        })
+    
+        return maxArr
+    }

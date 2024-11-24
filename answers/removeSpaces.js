@@ -22,6 +22,28 @@ function removeWhiteSpacesThree(str) {
   return nonSpaceWord.join('');
 }
 
+//method 4
+function removeSpaces(str){
+  let nonSpaceStr =''
+
+  for(let i=0; i< str.length; i++){
+      if(str[i] !== ' '){
+          nonSpaceStr += str[i]
+      }
+  }
+  return nonSpaceStr
+}
+
+function whiteSpaces(str) {
+  let noSpaces =''
+  str.split('').forEach(e => {
+      if(e !== ' '){
+          noSpaces += e
+      }
+  })
+ return noSpaces
+}
+
 module.exports = {
   removeWhiteSpaces,
   removeWhiteSpacesTwo,
